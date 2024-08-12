@@ -1,175 +1,268 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Ropa+Sans:ital@0;1&family=Rubik+Scribble&family=Sigmar&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ropa+Sans:ital@0;1&family=Rubik+Scribble&family=Sigmar&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton+SC&family=Chelsea+Market&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ropa+Sans:ital@0;1&family=Rubik+Scribble&family=Sigmar&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
 
-:root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #FCA311   ;
-  --secondary-color: #14213D ;
-  --accent1-color: #29a648;
-  --accent2-color: #938d8d;
+:root{
+    --primary-color: #9ACBF1;
+    --secondary-color: #1b2650;
+    --accent1-color: #248c39c7;
+    --accent2-color: #e75110;
 
-  /* change the values below to your chosen font(s) */
-  --heading-font: Oswald;
-  --paragraph-font: Playfair Display;
+    --heading-font: 'Ropa Sans', serif;
+    --paragraph-font: 'anton', serif;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #14213D;  /* headlines on a white background */ 
-  --headline-color-on-color: #fff; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #29a648; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #29a648; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #14213d ;
-  --nav-link-color: #29a648;
-  --nav-background-color: #FCA311;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #14213D;
+    --nav-background-color: #1b2650;
+    --nav-link-color: #9ACBF1;
+    --nav-hover-link-color:  #248c39c7;  
+    --nav-hover-background-color: #e75110;
 }
 
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  max-width: 1200px;
+  max-width: 960px;
+  font-family: var(--paragraph-font);
   margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
+  background-color: #f4f3ee
 }
-img {
-  display: block;
-  margin: 0 auto;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
+#content {
+    background-color: white;
 }
 header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 140px;
 }
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+hr {
+  width: 90%;
+}
+  .author {
+    color: var(--accent2-color);
+    font-size: larger;
+  } 
+h1 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    font-size: xx-large;
+    margin-top: 25px;
+   margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    font-size: x-large;
+    margin-left: 40px;
+    margin-top: 40px;
+
+  
+}
+h3, h4 {
+    color: var(--accent2-color);
+    font-size: larger;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+ 
+}
+
+h5, h6 {
+  color: black;
+  text-align: center;
+  font-size: large;
+  margin-bottom: 20px;
+}
+img {
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+li {
+    margin-left: 40px;
+}
+.examplestylestitle {
+  color: red;
+  font-size: x-large;
+  text-align: center;
 }
 
 p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
+    margin-left: 55px;
+    padding: 20px;
+    color: black;
+    margin-right: 55px;
+    font-size: large;
+    background-color: rgba(202, 224, 252, 0.3);
 }
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
+.raftingimageshome {
+    display: flex;
+    width: 100%;
+  
+    
 }
-.colors th {
-  background-color: grey;
-}
-.colors td{
-  width: 25%;
-  height: 3em;
-}
+.raftingimageshome img {
+    width: 160px; 
 
-.primary {
-  background-color: var(--primary-color);
 }
-.secondary {
-  background-color: var(--secondary-color);
+.raftingimageschilda {
+    display: flex;
+    width: 100%;
 }
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
-}
+.raftingimageschilda img {
+    width: 160px; 
+   height: 100%;
 
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
 }
+.raftingimageschildb {
+    display: flex;
+    width: 100%;
 
+}
+.raftingimageschildb img {
+    width: 160px;
+    height: 100%;
+
+}
+.fontexample2 {
+    font-family: raleway;
+}
+.fontexample1 {
+    font-family: anton;
+    font-size: larger;
+}
+.colorbackground {
+    background-color: var(--accent2-color);
+    color: #f4f3ee;
+}
+.colorschart {
+    width: 80%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+    
+  }
+  .colorschart th {
+    background-color: #C0C0C0;
+   
+  }
+  .colorschart td{
+    width: 25%;
+    height: 7em;
+   
+  }
+  .primary {
+    background-color: var(--primary-color);
+  }
+  .secondary {
+    background-color: var(--secondary-color);
+  
+  }
+  .accent1 {
+    background-color: var(--accent1-color);
+  }
+  .accent2{
+    background-color: var(--accent2-color);
+  }
+  p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+  }
 nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    display: flex;
+    margin: 50px;
 }
-nav  {
-  list-style-type: none;
-  display: flex;
 
-}
 nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
+    display: block;
+    color:  var(--secondary-color);
+    text-decoration: none;
+    padding: 1rem;
+}
 
-}
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+    color: var(--secondary-color);
 }
+
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+    color: var(--accent2-color);
+    background-color:  var(--accent1-color);
 }
 
 .sitemap {
-  display: grid;
-  justify-content: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(8, 8%);
+    grid-template-rows: 3em 1.5em 3em;
+    grid-template-areas: ". . . home home . . ."
+      ". . . . top . . ."
+      ". left left left middle right right ."
+      "page2 page2 . page3 page3 . page4 page4";
+      margin-bottom: 80px;
+  }
 
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-}
-.sitemap > div {
+  .sitemap > div {
+    text-align: center;
+  }
+  .sm-home {
+    grid-area: home;
+    background-color: var(--accent2-color);
+    color: white;
+    line-height: 3em;
+    
+  }
+  .sm-page2 {
+    grid-area: page2;
+    background-color: var(--accent2-color);
+    color: white;
+    line-height: 3em;
+  }
+  .sm-page3 {
+    grid-area: page3;
+    background-color: var(--accent2-color);
+    color: white;
+    line-height: 3em;
+  }
+  .sm-page4 {
+    grid-area: page4;
+    background-color: var(--accent2-color);
+    color: white;
+    line-height: 3em;
+  }
 
-  text-align: center;
+  .top {
+    grid-area: top;
+    border-left: 1px solid;
+  }
+  .left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  }
+  .middle {
+    grid-area: middle;
+   border-top: 1px solid;
+   border-left: 1px solid;
+    
+  }
+  .right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+  }
 
+.siteplanfooter {
+  background-color: #9ACBF1;
 }
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
-}
+footer {
+    width: 100%;
+    background-color: #9ACBF1;
 
-.top {
-  grid-area: top;
-  border-left: 1px solid;
-}
-
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
 }
